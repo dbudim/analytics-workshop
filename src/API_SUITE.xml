@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API">
+    <test name="Board Service Test">
+        <classes>
+            <class name="com.dbudim.analytics.api.BoardServiceTest"></class>
+        </classes>
+    </test>
+    <test name="Push Data Test">
+        <classes>
+            <class name="com.dbudim.analytics.PushDataTest"></class>
+        </classes>
+    </test>
+</suite>
