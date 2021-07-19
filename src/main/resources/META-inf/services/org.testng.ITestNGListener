@@ -1,4 +1,4 @@
 com.dbudim.analytics.listeners.SuiteAnalytics
-com.dbudim.analytics.listeners.GlobalMetricsListener
 com.dbudim.analytics.listeners.OwnerTrackListener
+com.dbudim.analytics.listeners.GlobalMetricsListener
 com.dbudim.analytics.api.interceptors.BoardsAnalyticsListener

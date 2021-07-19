@@ -30,7 +30,6 @@ public class PageRequestsTest {
 
     @BeforeClass
     public void prepareData() {
-        Configuration.baseUrl = "https://www.imdb.com";
         ChromeOptions options = new ChromeOptions();
         LoggingPreferences logPrefs = new LoggingPreferences();
         logPrefs.enable(LogType.PERFORMANCE, Level.ALL);

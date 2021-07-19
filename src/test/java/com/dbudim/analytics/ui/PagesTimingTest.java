@@ -2,6 +2,7 @@ package com.dbudim.analytics.ui;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import com.dbudim.analytics.Owner;
 import com.dbudim.analytics.tools.ElasticApi;
 import com.dbudim.analytics.ui.pages.ComingSoonPage;
@@ -33,6 +34,7 @@ public class PagesTimingTest {
         pageOpener.run();
         long end = System.currentTimeMillis();
         new ElasticApi().pushData("aqa-pages", Map.of("page_name", name, "open_time", end - start, "timestamp", new Date()));
+        WebDriverRunner.getWebDriver().quit();
     }
 
     @DataProvider
